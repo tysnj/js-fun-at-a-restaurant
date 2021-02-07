@@ -16,26 +16,32 @@ function listItems(deliveryOrders){
 }
 
 // This has hardcode in it but passes the test..
+// function searchOrder(deliveryOrders, item){
+//   for (var i=0; i<deliveryOrders.length; i++){
+//   if (item === deliveryOrders[i].item || item === deliveryOrders[1].item){
+//   return true;
+// } else {
+//   return false;
+// }
+//   }
+// }
+
+// I'm rying to refactor this and make it dynamic below... it passes
 function searchOrder(deliveryOrders, item){
   for (var i=0; i<deliveryOrders.length; i++){
-  if (item === deliveryOrders[i].item || item === deliveryOrders[1].item){
-  return true;
-} else {
-  return false;
-}
-  }
+  if (deliveryOrders[i].item === item){
+    return true;
+  } else continue;
+}  return false;
 }
 
-// I'm rying to refactor this and make it dynamic below...
+// I'm rying to refactor this to the opposite to see if possible..
 // function searchOrder(deliveryOrders, item){
-//   var inList;
 //   for (var i=0; i<deliveryOrders.length; i++){
-//   if (item === deliveryOrders[i].item || item === deliveryOrders[i].item){
-//   inList = true;
-// } else {
-//   inList = false;
-// }
-//   } return inList;
+//   if (deliveryOrders[i].item !== item){
+//     return false;
+//   } else continue;
+// }  return true;
 // }
 
 

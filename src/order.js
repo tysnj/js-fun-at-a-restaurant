@@ -14,11 +14,11 @@ function listItems(deliveryOrders){
     items.push(deliveryOrders[i].item);
 } return items.join(", ");
 }
-
-// This has hardcode in it but passes the test..
+//
+// //This has hardcode in it but passes the test..
 // function searchOrder(deliveryOrders, item){
 //   for (var i=0; i<deliveryOrders.length; i++){
-//   if (item === deliveryOrders[i].item || item === deliveryOrders[1].item){
+//   if (item === deliveryOrders[i].item || item === deliveryOrders[i].item){
 //   return true;
 // } else {
 //   return false;
